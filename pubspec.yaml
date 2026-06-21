@@ -1,0 +1,50 @@
+name: voice_assistant
+description: A multilingual voice assistant Flutter application with Flask backend integration.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  google_fonts: ^6.2.1
+
+  # HTTP requests to connect Flutter with Flask backend
+  http: ^1.2.1
+
+  # Speech recognition (voice to text)
+  speech_to_text: ^7.0.0
+
+  # Optional: Text to speech (assistant response voice)
+  flutter_tts: ^3.8.5
+
+  # Icons for iOS style widgets
+  cupertino_icons: ^1.0.6
+
+  # State management (optional but useful)
+  provider: ^6.1.2
+
+  # Local storage for persistent per-user history
+  shared_preferences: ^2.3.2
+
+  # Open highlighted reference links from response screen
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets folder (if you add images or audio later)
+  assets:
+    - assets/images/
+    - assets/offline_sources/
